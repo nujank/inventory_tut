@@ -91,10 +91,19 @@ func _ready() -> void:
 	# Then we can listen for some signals from the inventory ui
 	inventory_ui.item_slot_clicked.connect(on_inventory_item_slot_clicked)
 	inventory_ui.item_slot_hovered.connect(on_inventory_item_slot_hovered)
+	
+	# To setup the hotbar stuff you'd do something like..
+	# hotbar_inventory = ItemInventory.new()
+	# hotbar_inventory.inventory_size = 5
+	# hotbar_inventory_ui.setup(hotbar_inventory)
+	# hotbar_inventory_ui.item_slot_clicked.connect(on_hotbar_inventory_item_slot_clicked)
+	# hotbar_inventory_ui.item_slot_hovered.connect(on_hotbar_inventory_item_slot_hovered)
 
 
 # Basically all this is doing is saying:
 # "When we click on an inventory slot ui we want to use that item and remove it from the inventory."
+# You might instead want to instantiate a new ContextMenu scene so you can select what action to
+# perform on an item.
 func on_inventory_item_slot_clicked(index: int) -> void:
 	# We get the item at the index from the inventory
 	var item_data: ItemData = inventory_ui.inventory.get_item_at(index)

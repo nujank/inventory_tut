@@ -2,6 +2,9 @@ class_name ItemEffectIncreaseHealth
 extends ItemEffect
 
 
+# An item effect that just heals a unit for an amount of health.
+
+
 @export var amount: float = 1
 
 

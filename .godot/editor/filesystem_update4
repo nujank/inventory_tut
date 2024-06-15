@@ -5,3 +5,13 @@ res://inventory_ui/item_slot_ui.tscn
 res://main.gd
 res://inventory_ui/item_info_panel.tscn
 res://inventory/item_effect/item_effect_increase_health.gd
+res://inventory/item_inventory.gd
+res://inventory/item_slot.gd
+res://inventory/item_data.gd
+res://inventory/items/item_data_weapon.gd
+res://inventory/items/item_data_consumable.gd
+res://inventory/item_effect/item_effect.gd
+res://inventory/item_effect/item_effect_debug_print.gd
+res://inventory_ui/inventory_ui.gd
+res://inventory_ui/item_info_panel.gd
+res://inventory_ui/item_slot_ui.gd

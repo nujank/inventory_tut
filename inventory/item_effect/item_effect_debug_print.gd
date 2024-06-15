@@ -2,6 +2,9 @@ class_name ItemEffectDebugPrint
 extends ItemEffect
 
 
+# A simple ItemEffect that just prints a debug message.
+
+
 @export var message: String
 
 

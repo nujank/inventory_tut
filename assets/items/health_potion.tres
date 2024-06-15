@@ -13,6 +13,6 @@ script = ExtResource("1_kseoy")
 on_used_effect = SubResource("Resource_hadav")
 id = "health_potion"
 name = "Health Potion"
-description = "Daddy chilled to perfection. Health 10 damage."
+description = "Daddy chilled to perfection. Heals 10 damage."
 icon = ExtResource("1_5sexw")
 max_stack_size = 10

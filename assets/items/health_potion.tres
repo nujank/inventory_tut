@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="ItemDataConsumable" load_steps=5 format=3 uid="uid://l5rpt6dtu2gr"]
+
+[ext_resource type="Texture2D" uid="uid://d1v1liq7nr7fi" path="res://inventory_ui/icons/potion.png" id="1_5sexw"]
+[ext_resource type="Script" path="res://inventory/items/item_data_consumable.gd" id="1_kseoy"]
+[ext_resource type="Script" path="res://inventory/item_effect/item_effect_increase_health.gd" id="2_tihhx"]
+
+[sub_resource type="Resource" id="Resource_hadav"]
+script = ExtResource("2_tihhx")
+amount = 10.0
+
+[resource]
+script = ExtResource("1_kseoy")
+on_used_effect = SubResource("Resource_hadav")
+id = "health_potion"
+name = "Health Potion"
+description = "Daddy chilled to perfection. Health 10 damage."
+icon = ExtResource("1_5sexw")
+max_stack_size = 10

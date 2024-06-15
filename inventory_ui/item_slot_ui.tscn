@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://darkly6p3vt6w"]
+
+[ext_resource type="Script" path="res://inventory_ui/item_slot_ui.gd" id="1_dbbw2"]
+[ext_resource type="Texture2D" uid="uid://b6jsa1qfeiqpd" path="res://inventory_ui/icons/leaf_icon.png" id="2_3cjhr"]
+
+[node name="ItemSlotUI" type="TextureButton"]
+custom_minimum_size = Vector2(50, 50)
+offset_right = 20.0
+offset_bottom = 20.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_dbbw2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.231373)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="ItemIcon" type="TextureRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_3cjhr")
+
+[node name="StackCountLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 16)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "[right]99[/right]"
+scroll_active = false

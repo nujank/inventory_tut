@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemDataWeapon" load_steps=3 format=3 uid="uid://deor0uajieti"]
+
+[ext_resource type="Script" path="res://inventory/items/item_data_weapon.gd" id="1_88yvx"]
+[ext_resource type="Texture2D" uid="uid://b6jsa1qfeiqpd" path="res://inventory_ui/icons/leaf_icon.png" id="1_hm0le"]
+
+[resource]
+script = ExtResource("1_88yvx")
+damage = 10
+id = "void_sword"
+name = "Void Sword"
+description = "I can swing my sword, sword.
+Swing my void sword, sword!"
+icon = ExtResource("1_hm0le")
+max_stack_size = 1

@@ -1,0 +1,7 @@
+res://main.tscn
+res://assets/items/health_potion.tres
+res://inventory_ui/inventory_ui.tscn
+res://inventory_ui/item_slot_ui.tscn
+res://main.gd
+res://inventory_ui/item_info_panel.tscn
+res://inventory/item_effect/item_effect_increase_health.gd
